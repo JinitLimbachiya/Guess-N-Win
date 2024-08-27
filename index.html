@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess N Win</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    
+    <div id="gameContainer">
+
+        <h1>Guess N Win!</h1>   
+        <h4>(You have 5 attempts to guess the correct number between 1 to 100)</h4>
+
+        <div id="inputContainer">
+            <input type="number" id="userGuess" required>
+            <button id="checkBtn" onclick="checkNumber()">Check</button>
+        </div>
+
+        <div id="result"></div>
+        <div id="guessedNumbers"></div>
+        <button id="restartBtn" onclick="restartGame()">Restart</button>
+
+    </div>
+
+    <script src="./mind.js"></script>
+
+</body>
+</html>
